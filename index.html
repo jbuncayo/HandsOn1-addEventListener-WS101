@@ -44,17 +44,6 @@
             transform: scale(0.95);
         }
 
-        button.dark-theme {
-            box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
-        }
-
-        /* Dark theme styles */
-        button.dark-theme:hover {
-            background-color: #777;
-            box-shadow: 0 8px 12px rgba(255, 255, 255, 0.2);
-        }
-
-        /* Pulsating animation */
         @keyframes pulse {
             0% {
                 transform: scale(1);
@@ -77,29 +66,24 @@
     <div style="margin-top: 50px;">
         <h1>JavaScript addEventListener() Hands-On</h1>
 
-        <!-- Buttons with different id attributes and additional classes -->
         <button id="button1" class="pulsate">Button 1</button>
         <button id="button2" class="pulsate">Button 2</button>
         <button id="button3" class="pulsate">Button 3</button>
     </div>
 
     <script>
-        // Function 1 to handle button 1 click
         function button1Click() {
             alert("Button 1 was clicked!");
         }
 
-        // Function 2 to handle button 2 click
         function button2Click() {
             alert("Button 2 was clicked!");
         }
 
-        // Function 3 to handle button 3 click
         function button3Click() {
             alert("Button 3 was clicked!");
         }
 
-        // Adding event listeners to the buttons
         document.getElementById("button1").addEventListener("click", button1Click);
         document.getElementById("button2").addEventListener("click", button2Click);
         document.getElementById("button3").addEventListener("click", button3Click);
